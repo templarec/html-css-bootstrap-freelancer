@@ -1,0 +1,28 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+.navbar-default {
+  background-color: #2C3E50;
+  border-color: #2C3E50;
+
+}
+.navbar-brand {
+  height: 60px;
+  padding: 20px 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  }
+.navbar-toggle {
+    margin-top: 12px;
+}
+.navbar-default .navbar-brand {
+  color: #fff;
+}
+.navbar-default .navbar-nav>li>a {
+     color: #fff;
+     text-transform: uppercase;
+     font-weight: bold;
+}
+.navbar-nav>li>a {
+    line-height: 30px;
+}
