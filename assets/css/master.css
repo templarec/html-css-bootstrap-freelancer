@@ -117,6 +117,55 @@ header {
   color: #fff;
   margin-top: 20px;
 }
+#contacts .divider div {
+  color: #2C3E50;
+  }
+#contacts .lines {
+    background-color:  #2C3E50;
+}
+#contacts {
+  text-align: center;
+  padding-bottom: 42px;
+}
+.contacts-title h1 {
+  font-size: 2em;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-top: 0.8em;
+}
+
+.contacts-form form input, .contacts-form form textarea {
+  width: 86%;
+  display: inline-block;
+  color: #000;
+  margin: 10px 0;
+  border: 0;
+  box-shadow: none;
+  border-radius: 0;
+  border-bottom: 1px solid #ccc;
+  padding: 0;
+}
+.contacts-form form input:focus, .contacts-form form textarea:focus {
+  border-color: none;
+  outline: 0;
+  box-shadow: none;
+  border-bottom: 1px solid #ccc;
+}
+.contacts-form form input::placeholder, .contacts-form form textarea::placeholder {
+  color: #000;
+  font-weight: bold;
+}
+.contacts-btn {
+  text-align: left;
+  width: 86%;
+  margin: 0 auto;
+}
+.my-send-btn {
+  background-color: #1ABC9C;
+  color: #fff;
+  border: none;
+}
+
 @media all and (min-width: 768px) {
   #big-title div h1  {
     font-size: 3.2em;
@@ -130,7 +179,7 @@ header {
   .star {
     padding: 0 15px;
   }
-  .portfolio-title h1 {
+  .portfolio-title h1, .about-title h1, .contacts-title h1 {
     font-size: 2.5em;
   }
 }
