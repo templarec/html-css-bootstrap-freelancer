@@ -91,6 +91,32 @@ header {
 .card-img {
   padding-bottom: 30px;
 }
+#about {
+  background-color: #1ABC9C;
+  text-align: center;
+  padding-bottom: 42px;
+}
+.about-title h1 {
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+  font-size: 2em;
+  padding-top: 0.8em;
+}
+.about-desc {
+  text-align: left;
+  color: #fff;
+  font-size: 1.25em;
+}
+.about-desc p {
+  padding-top: 20px;
+}
+.my-dld-btn {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  margin-top: 20px;
+}
 @media all and (min-width: 768px) {
   #big-title div h1  {
     font-size: 3.2em;
