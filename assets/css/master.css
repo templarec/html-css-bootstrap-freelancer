@@ -1,11 +1,10 @@
 body {
   font-family: 'Montserrat', sans-serif;
 }
-
+/* NAVBAR */
 .navbar-default {
   background-color: #2C3E50;
   border-color: #2C3E50;
-
 }
 .navbar-brand {
   height: 80px;
@@ -19,14 +18,32 @@ body {
 .navbar-default .navbar-brand {
   color: #fff;
 }
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:visited {
+  color: #fff;
+}
 .navbar-default .navbar-nav>li>a {
      color: #fff;
      text-transform: uppercase;
      font-weight: bold;
 }
+.navbar-default .navbar-nav > li > a:hover {
+  color: #1ABC9C;
+}
 .navbar-nav > li > a {
     line-height: 50px;
 }
+.navbar-collapse {
+  border: none;
+  box-shadow: none;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: #1ABC9C;
+}
+.navbar-default .navbar-toggle {
+    border-color: #1ABC9C;
+}
+/* end NAVBAR */
+/* jumbotron */
 header {
   background-color: #1ABC9C;
   text-align: center;
@@ -52,7 +69,6 @@ header {
   background-color: #fff;
   border-radius: 4px;
   vertical-align: middle;
-
 }
 .star {
   padding: 0 5px;
@@ -66,8 +82,11 @@ header {
   font-size: 1.2em;
   padding: 15px 0;
 }
+/* portfolio */
 #portfolio {
   text-align: center;
+  padding-bottom: 10px;
+  padding-top: 50px;
 }
 .portfolio-title h1 {
   text-transform: uppercase;
@@ -91,10 +110,32 @@ header {
 .card-img {
   padding-bottom: 30px;
 }
+.card-img .img-overlay {
+  display: none;
+  width: calc(100% - 30px);
+  height: calc(100% - 30px);
+  border-radius: 15px;
+  position: absolute;
+}
+.card-img:hover .img-overlay {
+  display: block;
+  background-color: rgba(26, 188, 156,0.85);
+  font-size: 100px;
+  color: #fff;
+  padding: auto 0;
+  cursor: pointer;
+}
+.card-img:hover .img-overlay i {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+/* about */
 #about {
   background-color: #1ABC9C;
   text-align: center;
   padding-bottom: 42px;
+  padding-top: 50px;
 }
 .about-title h1 {
   text-transform: uppercase;
@@ -115,8 +156,14 @@ header {
   background-color: transparent;
   border: 2px solid #fff;
   color: #fff;
-  margin-top: 20px;
+  padding-top: 20px;
 }
+.my-dld-btn:hover {
+  background-color: #fff;
+  border: 2px solid #fff;
+  color: #000;
+}
+/* contacts */
 #contacts .divider div {
   color: #2C3E50;
   }
@@ -126,6 +173,7 @@ header {
 #contacts {
   text-align: center;
   padding-bottom: 42px;
+  padding-top: 50px;
 }
 .contacts-title h1 {
   font-size: 2em;
@@ -133,7 +181,6 @@ header {
   text-transform: uppercase;
   padding-top: 0.8em;
 }
-
 .contacts-form form input, .contacts-form form textarea {
   width: 86%;
   display: inline-block;
@@ -165,8 +212,60 @@ header {
   color: #fff;
   border: none;
 }
-
+.my-send-btn:hover {
+  background-color: #146c5c;
+}
+/* footer */
+footer {
+  background-color: #3A546D;
+  color: #fff;
+  text-align: center;
+  padding-top: 20px;
+}
+footer h4 {
+  text-transform: uppercase;
+}
+footer p, footer i {
+  font-size: 1.4em;
+}
+.footer-links, .footer-location, .footer-about {
+  padding: 20px 0;
+  vertical-align: middle;
+}
+.my-btn-social {
+  border-radius: 100%;
+  background-color: transparent;
+  border: 1px solid #fff;
+  margin: 0 10px;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  line-height: 38px;
+  padding: 12px 12px;
+}
+.my-btn-social:hover {
+  color: #3A546D;
+  background-color: #fff;
+}
+.footer-about a {
+  color: #20AE94;
+}
+.footer-about a:hover {
+  color: #146c5c;
+  text-decoration: underline;:
+}
+/* socket */
+.socket {
+  background-color: #2C3E50;
+  color: #fff;
+  padding: 40px 0;
+  font-size: 0.8em;
+}
+/* media queries per i testi */
 @media all and (min-width: 768px) {
+  .navbar-brand {
+    font-size: 2em;
+  }
   #big-title div h1  {
     font-size: 3.2em;
   }
@@ -182,13 +281,24 @@ header {
   .portfolio-title h1, .about-title h1, .contacts-title h1 {
     font-size: 2.5em;
   }
+  footer h4 {
+    font-size: 1.8em;
+  }
+  .my-btn-social {
+    margin: 0;
+  }
 }
 @media all and (min-width: 992px) {
-
   .lines {
     width: 160px;
   }
   .star {
     padding: 0 25px;
+  }
+  .my-btn-social {
+    margin: 0 10px;
+    width: 50px;
+    height: 50px;
+    line-height: 38px;
   }
 }
