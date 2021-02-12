@@ -256,10 +256,13 @@ footer p, footer i {
 }
 /* socket */
 .socket {
-  background-color: #2C3E50;
   color: #fff;
   padding: 40px 0;
   font-size: 0.8em;
+  margin: 0;
+}
+.bg-navyblue {
+  background-color: #2C3E50;
 }
 /* media queries per i testi */
 @media all and (min-width: 768px) {
